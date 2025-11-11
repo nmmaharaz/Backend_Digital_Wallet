@@ -43,7 +43,7 @@ const userSchema = new Schema<IUser>({
         type: String,
         enum: Object.values(ApprovalStatus)
     },
-    commissionRate: { type: parent },
+    commissionRate: { type: Number },
     totalCommission: { type: Number }, // optional (O)
 
     employeeId: { type: String },

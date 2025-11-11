@@ -3,6 +3,7 @@ import { Server } from "http"
 import mongoose from "mongoose"
 import app from "./app"
 import { envVars } from "./app/config/env"
+import { connectRedis } from "./app/config/redis.config"
 
 let server: Server
 
@@ -17,7 +18,11 @@ const startServer = async () => {
         console.log(error)
     }
 }
-startServer()
+
+(async () => {
+    connectRedis()
+    startServer()
+})()
 
 process.on("SIGTERM", (err) => {
     console.log("SIGTERM Signal Rechived, Server Shutting Down...", err)

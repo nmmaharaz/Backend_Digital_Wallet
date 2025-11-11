@@ -22,6 +22,5 @@ const moduleRoutes = [
 ]
 
 moduleRoutes.forEach((route)=>{
-    console.log("this is router",route)
     router.use(route.path, route.route)
 })  
