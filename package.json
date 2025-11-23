@@ -24,6 +24,7 @@
     "typescript-eslint": "^8.46.3"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@types/bcrypt": "^6.0.0",
     "@types/ejs": "^3.1.5",
     "@types/http-status-codes": "^1.2.0",
@@ -31,6 +32,9 @@
     "@types/redis": "^4.0.10",
     "axios": "^1.13.2",
     "bcrypt": "^6.0.0",
+=======
+    "@types/http-status-codes": "^1.2.0",
+>>>>>>> 18631bcaa67e076c0e153f052107dfad51b5874d
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
